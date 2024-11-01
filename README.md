@@ -13,8 +13,12 @@ Programadores De Papel es una librería en línea dedicada a ofrecer una cuidada
 
 - **Ejercicio Práctico #2:** Agregar un archivo README.md al proyecto con una breve descripción de la página a desarrollar. ✔︎
 
-
 ### Clase 2
 - **Ejercicio Práctico #1:** Crear una barra de navegación con una lista desordenada de enlaces internos utilizando la etiqueta `<nav>`. ✔︎
 
-- **Ejercicio Práctico #2:** Insertar un logo en formato .png en el <header> y un video con subtítulos en una `<section>` dentro del `<main>`. ✔︎
+- **Ejercicio Práctico #2:** Insertar un logo en formato .png en el `<header>` y un video con subtítulos en una `<section>` dentro del `<main>`. ✔︎
+
+### Clase 3
+- **Ejercicio Práctico #1:** Crear un formulario de contacto en la sección `<main>` utilizando Formspree con campos para nombre, correo electrónico y mensaje.✔︎
+
+- **Ejercicio Práctico #2:** Subir el proyecto a un hosting gratuito como Netlify o GitHub Pages y compartir el enlace en el aula virtual. ✔︎

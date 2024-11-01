@@ -17,20 +17,37 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <!-- <li><a href="contacto.html">Contacto</a></li> -->
                 <li><a href="">Buscar</a></li>
             </ul>
         </nav>
     </header>
 <!-- MAIN -->
     <main>
-        <section>
+        <!-- Sección videio -->
+        <section id="video">
             <video width="300" controls>
                 <source src="video/Book.mp4" type="video/mp4">
                 <track src="video/Book.vtt" kind="subtitles" srclang="es"
                 label="Español">
             </video>
         </section>
+        
+        <!-- Sección contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <h3>Dejanos tu consulta</h3>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xeoqazbb" method="POST">
+                <label>Nombre: <input type="text" name="name" cols="25"></label><br>
+                <label>Correo:  <input type="email" name="email" cols="25"></label><br>
+                <label>Mensaje: <textarea name="message" rows="3" cols="30"></textarea> </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+            </form>
+        </section>
+
     </main>
 <!-- FOOTER -->
     <footer>
