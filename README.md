@@ -22,3 +22,7 @@ Programadores De Papel es una librería en línea dedicada a ofrecer una cuidada
 - **Ejercicio Práctico #1:** Crear un formulario de contacto en la sección `<main>` utilizando Formspree con campos para nombre, correo electrónico y mensaje.✔︎
 
 - **Ejercicio Práctico #2:** Subir el proyecto a un hosting gratuito como Netlify o GitHub Pages y compartir el enlace en el aula virtual. ✔︎
+
+### Clase 4
+- **Ejercicio Práctico #1:** Incorporar un archivo CSS externo llamado styles.css en el HTML y aplicar estilos al `<header>` y `<footer>`.✖︎
+
