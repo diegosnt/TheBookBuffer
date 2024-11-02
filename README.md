@@ -19,7 +19,7 @@ Programadores De Papel es una librería en línea dedicada a ofrecer una cuidada
 - **Ejercicio Práctico #2:** Insertar un logo en formato .png en el `<header>` y un video con subtítulos en una `<section>` dentro del `<main>`. ✔︎
 
 ### Clase 3
-- **Ejercicio Práctico #1:** Crear un formulario de contacto en la sección `<main>` utilizando Formspree con campos para nombre, correo electrónico y mensaje.✔︎
+- **Ejercicio Práctico #1:** Crear un formulario de contacto en la sección `<main>` utilizando Formspree con campos para nombre, correo electrónico y mensaje. ✔︎
 
 - **Ejercicio Práctico #2:** Subir el proyecto a un hosting gratuito como Netlify o GitHub Pages y compartir el enlace en el aula virtual. ✔︎
 
@@ -27,3 +27,8 @@ Programadores De Papel es una librería en línea dedicada a ofrecer una cuidada
 - **Ejercicio Práctico #1:** Incorporar un archivo CSS externo llamado styles.css en el HTML y aplicar estilos al `<header>` y `<footer>`. ✔︎
 
 - **Ejercicio Práctico #2:** Modificar la barra de navegación cambiando el color de los enlaces y el fondo del menú en la lista de navegación. ✔︎
+
+### Clase 5
+- **Ejercicio Práctico #1:** Personalizar las fuentes del header y párrafos en main usando Google Fonts. ✔︎
+
+- **Ejercicio Práctico #2:** Aplicar un fondo de imagen o color degradado y ajustar márgenes y paddings para mejorar el diseño. ✔︎

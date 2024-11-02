@@ -1,46 +1,76 @@
-
-
 body {
-    background-color: burlywood;
+  background-color: burlywood;
 }
 
-
 h1 {
-    color: green;
+  color: green;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 footer p {
-    color: blue;
-    font-size: 10px;
-    text-align: center;
+  color: darkblue;
+  font-size: 10px;
+  text-align: center;
 }
 
 .nav-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+  display: inline;
+  margin-right: 15px;
 }
 
 nav a {
-    text-decoration: none;
-    color: teal;
-    font-weight: bold;
+  text-decoration: none;
+  color: teal;
+  font-weight: bold;
 }
 
 section {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 h2 {
-    background-color:chocolate;
-    color:azure;
+  background-color: chocolate;
+  color: azure;
+}
 
+#libros {
+  margin-top: 5px;
+  padding: 15px;
+}
+
+#libros img {
+  /* width: 250px; */
+  height: 350px;
+  width: 100%;
+}
+
+.tarjetas {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.tarjeta {
+  border: 1px solid chocolate;
+  padding: 2rem;
+  width: 250px;
+}
+
+header{
+    font-family: "Fira Code", monospace;
+  }
+
+main p {
+    font-family: "Fira Code", monospace;
+    font-size: 15px;
 }

@@ -4,50 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programadores De Papel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
+    <title>Programadores De Papel</title>
 </head>
 
 <body>
-<!-- HEADER -->
+
+    <!-- HEADER -->
     <header>
         <img src="images/logoPDP.png" alt="" width="100">
-        <h1>Programadores De Papel</h1>
+        <h1 >Programadores De Papel</h1>
         <nav>
-            <ul  class="nav-list">
+            <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#libos">Libros</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#">Buscar</a></li>
+                <!-- <li><a href="#">Buscar</a></li> -->
             </ul>
         </nav>
     </header>
-<!-- MAIN -->
+
+    <!-- MAIN -->
     <main>
 
-        <!-- Sección Libros -->
-        <section id="librosDestacados">
+        <!-- Sección Destacados -->
+        <section id="libros">
             <h2>Libros Destacados</h2>
-            <p>Libors clasicos destacados del mes</p>
-            <img width="250" height="350" src="./images/01_clean_code.jpg" alt="Clean Code">
-            <img width="250" height="350" src="./images/02_c_programming.jpg" alt="Clean Code">
-            <img width="250" height="350" src="./images/03_pragmatic_programmer.jpg" alt="Clean Code">
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="./images/01_clean_code.jpg" alt="Clean Code">
+                    <h3>Clean</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
+                    <a href="">Ver más info</a>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="./images/02_c_programming.jpg" alt="Clean Code">
+                    <h3>Clean</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
+                    <a href="">Ver más info</a>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="./images/03_pragmatic_programmer.jpg" alt="Clean Code">
+                    <h3>Clean</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
+                    <a href="">Ver más info</a>
+                </div>
+            </div>
         </section>
 
-        <!-- Sección video -->
+        <!-- Sección Video -->
         <section id="video">
             <h2>Campaña publicitaria</h2>
             <video width="400" controls>
                 <source src="videos/Book.mp4" type="video/mp4">
-                <track src="videos/Book.vtt" kind="subtitles" srclang="es"
-                label="Español">
+                <track src="videos/Book.vtt" kind="subtitles" srclang="es" label="Español"></div>
             </video>
         </section>
 
-        <section>
-            <h2>Ubicacion</h2>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Rivadavia%206527/29/31,%20C1406%20GLI,%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:400px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div></div>
+        <!-- Sección Ubicacion -->
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Av.%20Rivadavia%206527/29/31,%20C1406%20GLI,%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 400px;
+                            width: 400px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net"></a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 400px;
+                            width: 400px;
+                        }
+                    </style>
+                </div>
+            </div>
         </section>
 
         <!-- Sección contacto -->
@@ -57,19 +105,20 @@
             <!-- modify this form HTML and place wherever you want your form -->
             <form action="https://formspree.io/f/xeoqazbb" method="POST">
                 <label>Nombre: <input type="text" name="name" cols="25"></label><br>
-                <label>Correo:  <input type="email" name="email" cols="25"></label><br>
+                <label>Correo: <input type="email" name="email" cols="25"></label><br>
                 <label>Mensaje: <textarea name="message" rows="3" cols="30"></textarea> </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar</button>
+                <!-- your other form fields go here -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
             </form>
         </section>
 
     </main>
-<!-- FOOTER -->
+
+    <!-- FOOTER -->
     <footer>
-        <h3>Seguinos en nuestras redes</h3>  
-        <ul> 
+        <h3>Seguinos en nuestras redes</h3>
+        <ul>
             <li>Instagram</li>
             <li>Youtube</li>
             <li>X</li>
