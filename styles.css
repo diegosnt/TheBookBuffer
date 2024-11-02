@@ -1,3 +1,10 @@
+
+
+body {
+    background-color: burlywood;
+}
+
+
 h1 {
     color: green;
 }
@@ -36,8 +43,4 @@ h2 {
     background-color:chocolate;
     color:azure;
 
-}
-
-body {
-    background-color: burlywood;
 }
