@@ -1,19 +1,24 @@
 body {
-  background-color: burlywood;
+  /* background-color: burlywood; */
+  /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+  background: linear-gradient(45deg, #ff0c71, #fd6084, #ffeacc);
+  font-family: "Fira Code", monospace;
 }
 
-h1 {
-  color: green;
-}
+
+/* ----------------------- header ----------------------- */
 
 header {
   text-align: center;
+  margin: 20px;
+  padding: 15px;
+  border: 2px;
+  background-color: #6ea49b;
+  border-radius: 15px;
 }
 
-footer p {
-  color: darkblue;
-  font-size: 10px;
-  text-align: center;
+h1 {
+  color:black;
 }
 
 .nav-list {
@@ -28,16 +33,27 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: teal;
+  color: rgb(2, 22, 22);
   font-weight: bold;
 }
 
-section {
-  background-color: antiquewhite;
+/* ----------------------- mian ----------------------- */
+
+main {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  border: 2px;
+  background-color: #d9d0ac;
+  border-radius: 15px;
+}
+
+main p {
+  font-size: 15px;
 }
 
 h2 {
-  background-color: chocolate;
+  background-color: #7d3f60;
   color: azure;
 }
 
@@ -54,6 +70,7 @@ h2 {
 
 .tarjetas {
   display: flex;
+
   /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
@@ -61,16 +78,86 @@ h2 {
 }
 
 .tarjeta {
-  border: 1px solid chocolate;
+  /* border: 1px solid #7d3f60; */
   padding: 2rem;
   width: 250px;
+  background-color: #a3ccaf;
+  border-radius: 15px;
 }
 
-header{
-    font-family: "Fira Code", monospace;
-  }
-
-main p {
-    font-family: "Fira Code", monospace;
-    font-size: 15px;
+.reseñas {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  height: 100%;
+  transform: translateY(-5px);
 }
+
+.reseñas h3 {
+  font-size: 15px;
+}
+
+
+.reseña {
+  width: 100%;
+  height: 13rem;
+  border: 1px solid  #7d3f60;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.reseña:hover{
+  transform: translateY(-5px);
+}
+
+.reseña p {
+  font-size: 12px;
+}
+
+.reseña cite {
+  font-size: 12px;
+}
+
+
+
+
+
+
+/* ----------------------- footer ----------------------- */
+
+footer {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  border: 2px;
+  background-color: #372b2e;
+  border-radius: 15px;
+}
+
+footer p {
+  color: white;
+  font-size: 10px;
+
+}
+
+footer ul li {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  margin-right: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+footer h3 {
+  color: white;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+}
+

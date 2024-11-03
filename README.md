@@ -1,10 +1,10 @@
 # Programadores De Papel
 
-El proyecto "Programadores De Papel" consiste en una página web especializada en la venta de libros clásicos de programación. Como parte de un curso de Front-End, este sitio web está diseñado con un enfoque en la semántica HTML para garantizar una estructura clara y accesible. Se utilizan etiquetas como `<header>`, `<main>`, y `<footer>` para organizar el contenido de manera lógica y coherente. Este proyecto sirve como base para aprender a construir la estructura fundamental de un sitio web, con vistas a futuras mejoras mediante la incorporación de estilos CSS y funciones interactivas con JavaScript.
+El proyecto "The Book Buffer" consiste en una página web especializada en la venta de libros clásicos de programación. Como parte de un curso de Front-End, este sitio web está diseñado con un enfoque en la semántica HTML para garantizar una estructura clara y accesible. Se utilizan etiquetas como `<header>`, `<main>`, y `<footer>` para organizar el contenido de manera lógica y coherente. Este proyecto sirve como base para aprender a construir la estructura fundamental de un sitio web, con vistas a futuras mejoras mediante la incorporación de estilos CSS y funciones interactivas con JavaScript.
 
-Sobre Programadores De Papel:
+Sobre The Book Buffer:
 
-Programadores De Papel es una librería en línea dedicada a ofrecer una cuidada selección de libros clásicos de programación. Con un compromiso hacia la calidad y la educación, nuestra misión es inspirar y equipar a programadores de todos los niveles con los conocimientos esenciales y atemporales del mundo de la informática.
+The Book Buffer es una librería en línea dedicada a ofrecer una cuidada selección de libros clásicos de programación. Con un compromiso hacia la calidad y la educación, nuestra misión es inspirar y equipar a programadores de todos los niveles con los conocimientos esenciales y atemporales del mundo de la informática.
 
 
 ---
@@ -32,3 +32,13 @@ Programadores De Papel es una librería en línea dedicada a ofrecer una cuidada
 - **Ejercicio Práctico #1:** Personalizar las fuentes del header y párrafos en main usando Google Fonts. ✔︎
 
 - **Ejercicio Práctico #2:** Aplicar un fondo de imagen o color degradado y ajustar márgenes y paddings para mejorar el diseño. ✔︎
+
+### Clase 6
+- **Ejercicio Práctico #1:** Definir las propiedades del modelo de caja para los elementos principales (header, main, section, footer) ajustando márgenes, rellenos y bordes. ✔︎
+
+- **Ejercicio Práctico #2:** Crear una disposición de productos en la sección "Productos" utilizando Flexbox para una alineación adaptable. ✔︎
+
+### Clase 7
+- **Ejercicio Práctico #1:** Definir las propiedades del modelo de caja para los elementos principales (header, main, section, footer) ajustando márgenes, rellenos y bordes. ✔︎
+
+- **Ejercicio Práctico #2:** Crear una disposición de productos en la sección "Productos" utilizando Flexbox para una alineación adaptable. ✔︎
