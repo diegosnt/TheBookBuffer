@@ -1,4 +1,4 @@
-# Programadores De Papel
+# The Book Buffer
 
 El proyecto "The Book Buffer" consiste en una página web especializada en la venta de libros clásicos de programación. Como parte de un curso de Front-End, este sitio web está diseñado con un enfoque en la semántica HTML para garantizar una estructura clara y accesible. Se utilizan etiquetas como `<header>`, `<main>`, y `<footer>` para organizar el contenido de manera lógica y coherente. Este proyecto sirve como base para aprender a construir la estructura fundamental de un sitio web, con vistas a futuras mejoras mediante la incorporación de estilos CSS y funciones interactivas con JavaScript.
 
