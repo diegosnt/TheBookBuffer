@@ -39,6 +39,6 @@ The Book Buffer es una librería en línea dedicada a ofrecer una cuidada selecc
 - **Ejercicio Práctico #2:** Crear una disposición de productos en la sección "Productos" utilizando Flexbox para una alineación adaptable. ✔︎
 
 ### Clase 7
-- **Ejercicio Práctico #1:** Definir las propiedades del modelo de caja para los elementos principales (header, main, section, footer) ajustando márgenes, rellenos y bordes. ✔︎
+- **Ejercicio Práctico #1:** Crear una sección de "Reseñas" con al menos 3 tarjetas organizadas responsivamente utilizando CSS Grid. ✔︎
 
-- **Ejercicio Práctico #2:** Crear una disposición de productos en la sección "Productos" utilizando Flexbox para una alineación adaptable. ✔︎
+- **Ejercicio Práctico #2:** Implementar media queries en la sección “Contacto” para ajustar el diseño y mejorar la adaptabilidad en dispositivos móviles. ✔︎
