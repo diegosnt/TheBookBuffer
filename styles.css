@@ -62,31 +62,41 @@ h2 {
 }
 
 #libros img {
-  /* width: 250px; */
   height: 350px;
   width: 100%;
 }
 
 .tarjetas {
   display: flex;
-
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 15px;
 }
 
 .tarjeta {
-  /* border: 1px solid #7d3f60; */
   padding: 2rem;
-  width: 250px;
+  width: 230px;
   background-color: #a3ccaf;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+.tarjeta img,
+.tarjeta h3,
+.tarjeta p,
+.tarjeta a {
+  margin-bottom: 10px;
+}
+
+.tarjeta input[type="button"] {
+  margin-top: auto;
 }
 
 .reseñas {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   height: 100%;
@@ -126,6 +136,36 @@ h2 {
 #ubicacion .mapouter {
   display: inline-block;
 }
+
+.btnAgregar {
+  font-family: "Fira Code", monospace;
+  background-color: #fd477e;
+  color: azure;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btnAgregar:hover {
+  background-color: #612f48;
+}
+
+.btnAgregar:active {
+  background-color: #50243a;
+  transform: scale(0.98);
+}
+
+.tarjeta input[type="button"],
+.btnAgregar {
+  margin-top: auto;
+}
+
+
 
 /* ----------------------- footer ----------------------- */
 
