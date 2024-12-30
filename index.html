@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+
 
     <title>The Book Buffer</title>
 </head>
@@ -22,7 +24,7 @@
     <!-- HEADER -->
     <header>
         <img src="images/logoPDP.png" alt="" width="100">
-        <h1 >The Book Buffer</h1>
+        <h1>The Book Buffer</h1>
         <nav>
             <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
@@ -37,9 +39,17 @@
     <!-- MAIN -->
     <main>
 
+        <!-- Sección Libors -->
         <section id="libros">
             <h2>Libros Destacados</h2>
-            <div class="tarjetas"></div> 
+            <div class="tarjetas"></div>
+        </section>
+
+        <!-- Sección Carrito -->
+        <section id="carrito">
+            <h2>Carrito</h2>
+            <label for="">Contador: </label>
+            <label id="lblContador" for="">0</label>
         </section>
 
         <!-- Sección Video -->
@@ -47,7 +57,8 @@
             <h2>Campaña publicitaria</h2>
             <video controls>
                 <source src="videos/Book.mp4" type="video/mp4">
-                <track src="videos/Book.vtt" kind="subtitles" srclang="es" label="Etarjetasspañol"></div>
+                <track src="videos/Book.vtt" kind="subtitles" srclang="es" label="Etarjetasspañol">
+                </div>
             </video>
         </section>
 
@@ -94,53 +105,12 @@
             </form>
         </section>
 
-
         <section>
             <h2>Reseñas</h2>
             <p>Nuestros clientes dicen de nosotros..</p>
             <div class="reseñas">
-
-                <div class="reseña">
-                    <h3>The Pragmatinc Programmer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
-                    <cite>Juan Perez</cite>
-                </div>
-
-                <div class="reseña">
-                    <h3>The Pragmatinc Programmer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
-                    <cite>José Gomez</cite>
-                </div>
-
-                <div class="reseña">
-                    <h3>The Pragmatinc Programmer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
-                    <cite>Maria Garcia</cite>
-                </div>
-
-                <div class="reseña">
-                    <h3>The Pragmatinc Programmer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
-                    <cite>Maria Garcia</cite>
-                </div>
-                <div class="reseña">
-                    <h3>The Pragmatinc Programmer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
-                    <cite>Maria Garcia</cite>
-                </div>
-
-                <div class="reseña">
-                    <h3>The Pragmatinc Programmer</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.</p>
-                    <cite>Maria Garcia</cite>
-                </div>
-
-
-            </div>
-
             </div>
         </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -153,9 +123,11 @@
                 <li><i class="fa-brands fa-square-instagram"></i> </li>
                 <li><i class="fa-brands fa-youtube"> </i> </li>
                 <li><i class="fa-brands fa-linkedin"></i> </i> </li>
-             </ul>
+            </ul>
         </div>
         <p>© 2024 The Book Buffer. Todos los derechos reservados.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
