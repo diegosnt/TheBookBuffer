@@ -31,7 +31,6 @@
                 <li><a href="#libos">Libros</a></li>
                 <li><a href="#ubicacion">Ubicación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <!-- <li><a href="#">Buscar</a></li> -->
             </ul>
         </nav>
     </header>
@@ -50,7 +49,9 @@
             <h2>Carrito</h2>
             <ul id="listaCarrito"></ul><br>
             <label for="" class="pagar" >Total a pagar: </label>
-            <label id="lblTotalPagar" for="" class="pagar" >$0.00</label>
+            <label id="lblTotalPagar" for="" class="pagar" >$0.00</label><br>
+            <input id="pagarTotal" value="Ir a Pagar" class="buttonIrAPagar">
+            <input id="borrarCarrito" type="button" value="Borrar Carrito" class="buttonIrAPagar">
         </section>
 
         <!-- Sección Video -->
@@ -95,15 +96,15 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Dejanos tu consulta</p>
-            <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/xeoqazbb" method="POST">
-                <label>Nombre: <input type="text" name="name" cols="25"></label><br>
-                <label>Correo: <input type="email" name="email" cols="25"></label><br>
-                <label>Mensaje: <textarea name="message" rows="3" cols="30"></textarea> </label>
-                <!-- your other form fields go here -->
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </form>
+            <div class="contacto-container">
+                <form action="https://formspree.io/f/xeoqazbb" method="POST">
+                    <label>Nombre: <input type="text" name="name" cols="25"></label><br>
+                    <label>Correo: <input type="email" name="email" cols="25"></label><br>
+                    <label>Mensaje: <textarea name="message" rows="3" cols="30"></textarea></label>
+                    <button type="submit" class="buttonContacto">Enviar</button>
+                    <button type="reset" class="buttonContacto">Borrar</button>
+                </form>
+            </div>
         </section>
 
         <section>

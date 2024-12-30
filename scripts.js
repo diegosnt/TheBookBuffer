@@ -2,28 +2,28 @@ const productos = [
   {
     id: 1,
     titulo: "Clean Code",
-    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.",
+    descripcion: "Guía exhaustiva para escribir código de calidad profesional. Técnicas y mejores prácticas.",
     imagen: "01_clean_code.jpg",
     precio: 10.30
   },
   {
     id: 2,
     titulo: "The C Programming Language",
-    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.",
+    descripcion: "Introducción definitiva a C por sus creadores. Fundamentos y ejemplos prácticos.",
     imagen: "02_c_programming.jpg",
     precio: 20.99
   },
   {
     id: 3,
     titulo: "The Pragmatinc Programmer",
-    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.",
+    descripcion: "Consejos atemporales para ser un mejor programador. Prácticas y filosofía del buen código.",
     imagen: "03_pragmatic_programmer.jpg",
     precio: 30.01
   },
   {
     id: 4,
     titulo: "Code Complete",
-    descripcion: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi alias consequatur.",
+    descripcion: "Clásico sobre construcción de software. Cubre diseño, codificación, depuración y más.",
     imagen: "04_code_complete.jpg",
     precio: 40.49
   }
@@ -73,6 +73,8 @@ const tarjetasContainer = document.querySelector('.tarjetas');
 const listaCarrito = document.getElementById("listaCarrito");
 const lblTotalPagar = document.getElementById("lblTotalPagar");
 const carritoSection = document.getElementById("carrito");
+const btnBorrarCarrito = document.getElementById("borrarCarrito");
+const btnPagar = document.getElementById("pagarTotal");
 
 let carrito = [];
 
@@ -97,15 +99,13 @@ function crearTarjeta(producto) {
 
 
 function actualizarCarrito() {
-  listaCarrito.innerHTML = ""; // Limpiar el contenido de la lista
+  listaCarrito.innerHTML = "";
 
   let total = 0;
 
   if (carrito.length === 0) {
-    // Ocultar la sección del carrito
     carritoSection.style.display = "none";
   } else {
-    // Mostrar la sección del carrito
     carritoSection.style.display = "block";
 
     carrito.forEach(producto => {
@@ -129,20 +129,48 @@ actualizarCarrito();
 
 function agregarProducto(producto) {
   carrito.push(producto);
-  actualizarCarrito(); // Llamar a actualizarCarrito después de agregar un producto
+  console.table(producto);
+  actualizarCarrito();
 }
 
 function removerProducto(idProducto) {
   const index = carrito.findIndex(producto => producto.id === idProducto);
   if (index !== -1) {
     carrito.splice(index, 1);
-    actualizarCarrito(); // Llamar a actualizarCarrito después de remover un producto
+    actualizarCarrito();
   }
 }
 
 productos.forEach(producto => {
   const nuevaTarjeta = crearTarjeta(producto);
   tarjetasContainer.appendChild(nuevaTarjeta);
+});
+
+btnBorrarCarrito.addEventListener('click', () => {
+  carrito = []; // Vaciar el carrito
+  actualizarCarrito();
+});
+
+
+btnPagar.addEventListener('click', () => {
+  if (carrito.length > 0) {
+
+      let mensajeCarrito = "Libros en su carrito:\n";
+
+      carrito.forEach(producto => {
+          mensajeCarrito += `- ${producto.titulo}: $${producto.precio}\n`;
+      });
+
+      mensajeCarrito += `\nTotal: ${lblTotalPagar.innerText}`;
+
+      console.table(carrito);
+      alert(mensajeCarrito);
+
+      carrito = [];
+      actualizarCarrito();
+  } else {
+      alert("El carrito está vacío");
+  }
 });
 
 
