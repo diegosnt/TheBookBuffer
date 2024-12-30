@@ -72,6 +72,8 @@ const reviews = [
 const tarjetasContainer = document.querySelector('.tarjetas');
 const listaCarrito = document.getElementById("listaCarrito");
 const lblTotalPagar = document.getElementById("lblTotalPagar");
+const carritoSection = document.getElementById("carrito");
+
 let carrito = [];
 
 function crearTarjeta(producto) {
@@ -93,37 +95,48 @@ function crearTarjeta(producto) {
   return tarjeta;
 };
 
-function agregarProducto(producto) {
-  carrito.push(producto);
-  console.table(producto);
-  actualizarCarrito();
-}
 
 function actualizarCarrito() {
-  listaCarrito.innerHTML = "";
+  listaCarrito.innerHTML = ""; // Limpiar el contenido de la lista
 
   let total = 0;
-  carrito.forEach(producto => {
-    const listaItem = document.createElement('li');
-    listaItem.innerText = `${producto.titulo} - $${producto.precio}`;
 
-    const btnRemove = document.createElement('button');
-    btnRemove.innerText = "X";
-    btnRemove.addEventListener('click', () => removerProducto(producto.id));
-    listaItem.appendChild(btnRemove);
+  if (carrito.length === 0) {
+    // Ocultar la sección del carrito
+    carritoSection.style.display = "none";
+  } else {
+    // Mostrar la sección del carrito
+    carritoSection.style.display = "block";
 
-    listaCarrito.appendChild(listaItem);
-    total += producto.precio;
-  });
+    carrito.forEach(producto => {
+      const listaItem = document.createElement('li');
+      listaItem.innerText = `${producto.titulo} - $${producto.precio}`;
 
-  lblTotalPagar.innerText = `$${total.toFixed(2)}`;
+      const btnRemove = document.createElement('button');
+      btnRemove.innerText = "X";
+      btnRemove.addEventListener('click', () => removerProducto(producto.id));
+      listaItem.appendChild(btnRemove);
+
+      listaCarrito.appendChild(listaItem);
+      total += producto.precio;
+    });
+
+    lblTotalPagar.innerText = `$${total.toFixed(2)}`;
+  }
+}
+
+actualizarCarrito();
+
+function agregarProducto(producto) {
+  carrito.push(producto);
+  actualizarCarrito(); // Llamar a actualizarCarrito después de agregar un producto
 }
 
 function removerProducto(idProducto) {
   const index = carrito.findIndex(producto => producto.id === idProducto);
   if (index !== -1) {
     carrito.splice(index, 1);
-    actualizarCarrito();
+    actualizarCarrito(); // Llamar a actualizarCarrito después de remover un producto
   }
 }
 

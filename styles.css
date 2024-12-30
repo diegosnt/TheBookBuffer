@@ -177,6 +177,31 @@ h2 {
 }
 
 
+#listaCarrito li button {
+  background-color: #fd477e;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 1; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+#listaCarrito li button:hover {
+  background-color: #c82333;
+  transform: scale(1.1);
+}
+
+#listaCarrito li button:active {
+  background-color: #bd2130;
+  transform: scale(0.95);
+}
+
+
 /* ----------------------- footer ----------------------- */
 
 footer {
