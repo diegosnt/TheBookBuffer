@@ -70,8 +70,9 @@ const reviews = [
 ]
 
 const tarjetasContainer = document.querySelector('.tarjetas');
-const lblContador = document.getElementById("lblContador");
-let contador = 0;
+const listaCarrito = document.getElementById("listaCarrito");
+const lblTotalPagar = document.getElementById("lblTotalPagar");
+let carrito = [];
 
 function crearTarjeta(producto) {
   const tarjeta = document.createElement('div');
@@ -83,20 +84,47 @@ function crearTarjeta(producto) {
     <p>Precio:$${producto.precio}</p>
     <p>${producto.descripcion}</p>
     <a href="#">Ver más info</a><br>
-    <input type="button" class="btnAgregar" value="Agregar al Carrito">
+    <button class="btnAgregar">Agregar al Carrito</button>
   `;
 
-  // Seleccionar el botón DENTRO de la tarjeta creada
   const btnAgregar = tarjeta.querySelector('.btnAgregar');
-  btnAgregar.addEventListener('click', fnContador);
+  btnAgregar.addEventListener('click', () => agregarProducto(producto));
 
   return tarjeta;
 };
 
-function fnContador() {
-  contador++;
-  console.log("agregados:" + contador);
-  lblContador.innerText = contador;
+function agregarProducto(producto) {
+  carrito.push(producto);
+  console.table(producto);
+  actualizarCarrito();
+}
+
+function actualizarCarrito() {
+  listaCarrito.innerHTML = "";
+
+  let total = 0;
+  carrito.forEach(producto => {
+    const listaItem = document.createElement('li');
+    listaItem.innerText = `${producto.titulo} - $${producto.precio}`;
+
+    const btnRemove = document.createElement('button');
+    btnRemove.innerText = "X";
+    btnRemove.addEventListener('click', () => removerProducto(producto.id));
+    listaItem.appendChild(btnRemove);
+
+    listaCarrito.appendChild(listaItem);
+    total += producto.precio;
+  });
+
+  lblTotalPagar.innerText = `$${total.toFixed(2)}`;
+}
+
+function removerProducto(idProducto) {
+  const index = carrito.findIndex(producto => producto.id === idProducto);
+  if (index !== -1) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+  }
 }
 
 productos.forEach(producto => {
@@ -105,14 +133,13 @@ productos.forEach(producto => {
 });
 
 
-
 const reseñasContainer = document.querySelector('.reseñas');
 
 function mostrarReseñas() {
   reviews.forEach(review => {
     const producto = productos.find(producto => producto.id === review.id_libro);
 
-    if (producto) { // Verifica que se haya encontrado el producto correspondiente
+    if (producto) {
       const reseñaDiv = document.createElement('div');
       reseñaDiv.classList.add('reseña');
 
